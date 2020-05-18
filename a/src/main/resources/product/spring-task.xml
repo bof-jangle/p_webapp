@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:task="http://www.springframework.org/schema/task"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="
+	http://www.springframework.org/schema/task
+	http://www.springframework.org/schema/task/spring-task.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 定时发送邮件 -->
+<!-- 	<task:scheduled-tasks> -->
+<!-- 		<task:scheduled ref="bsMailServiceImpl" method="doSendEmail" cron="0/10 * * * * ?" /> -->
+<!-- 	</task:scheduled-tasks> -->
+	
+	<!-- 定时保存执行记录 -->
+<!-- 	<task:scheduled-tasks> -->
+<!-- 		<task:scheduled ref="bsExcuteHistoryServiceImpl" method="doSaveExcute" cron="0/30 * * * * ?" /> -->
+<!-- 	</task:scheduled-tasks> -->
+	<task:scheduled-tasks>
+		<task:scheduled ref="jgTaskServiceImpl" method="doSchedule" cron="0/10 * * * * ?" />
+	</task:scheduled-tasks>
+</beans>

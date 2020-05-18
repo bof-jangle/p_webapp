@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>xyz.jangle.module</groupId>
+	<artifactId>p</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>p</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<!-- 此处定义的是pom文件的全局属性(常量) -->
+		<spring.version>5.2.2.RELEASE</spring.version><!-- 声明spring版本号 -->
+		<jackson.version>2.9.9</jackson.version><!-- 声明jackson版本号 old 2.8.11 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Servlet API jsp页面需要 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>	<!-- 这个不会在打包时加入到lib中，因为tomcat等中间件会提供 -->
+		</dependency>
+		<!-- jsp所需的标签库 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>utf8</encoding>
+				</configuration>
+			</plugin>
+			<!-- maven test 插件的配置-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12</version>
+				<configuration>
+					<forkMode>always</forkMode>
+					<!-- pretest： 每一个测试创建一个新进程，为每个测试创建新的JVM是单独测试的最彻底方式，但也是最慢的，不适合hudson上持续回归。
+						once：在一个进程中进行所有测试。once为默认设置，在Hudson上持续回归时建议使用默认设置。
+						always：在一个进程中并行的运行脚本，Junit4.7以上版本才可以使用，surefire的版本要在2.6以上提供这个功能，其中 threadCount：执行时，指定可分配的线程数量。只和参数parallel配合使用有效。默认：5。 -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<modules>
+		<module>a</module>
+		<module>b</module>
+	</modules>
+</project>

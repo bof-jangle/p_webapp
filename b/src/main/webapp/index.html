@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="../images/douyin.png" type="image/x-icon" /><!-- 小图标 -->
+<title>横屏使用效果更佳----欢迎来到【阿景的当铺】战队主页3</title>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/backSystem.css" />
+<style>
+.header span {
+	width: 50px;
+}
+</style>
+</head>
+<body>
+<!-- 	<div class="header"> -->
+<!-- 		<a href="index/welcome.html" target="bottomIframe"><span>首页</span></a> -->
+<!-- 		<a href="index/bootstrap.html" target="bottomIframe"><span>bootstrap</span></a> -->
+<!-- 		<a href="index/react.html" target="bottomIframe"><span>react</span></a> -->
+<!-- 		<a href="index/easyUI.html" target="bottomIframe"><span>easyUI</span></a> -->
+<!-- 		<a href="index/demo.html" target="bottomIframe"><span>demo</span></a> -->
+<!-- 		<span style="float: right;width:250px;" id="login"> <a href="login.html"><span>login</span></a> -->
+<!-- 		</span> -->
+<!-- 	</div> -->
+	<div class="index-header" >
+		<span >
+			<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PA4LCAoLCgUJC3xNTRJfU1E" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png"/></a>
+			<span style="color:#FF0">友情链接：</span><a target="_blank" href="http://jangle.xyz/brightpackaging" style="color:#FF9;text-decoration:underline">光昭包装</a>
+			<a target="_blank" href="https://v3.bootcss.com/css" style="color:#FB6;text-decoration:underline">CSS样式说明</a>
+			<a target="_blank" href="https://v3.bootcss.com/javascript" style="color:#FA0;text-decoration:underline">JS插件说明</a>
+			<a target="_blank" href="https://www.jqueryui.org.cn/" style="color:#FA0;text-decoration:underline">jQuery UI</a>
+			<a target="_blank" href="http://jangle.xyz/easyui" style="color:#FA1;text-decoration:underline">easyUI</a>
+		</span>
+		<span style="float: right;width:250px;" id="login"><span id="visitCount"></span> <a href="login.html"><img alt="头像" src="images/userLogin.png" width="42" height="42"><span>欢迎登录</span></a>
+		</span>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+		<div class="navbar-header">
+<!-- 			<a class="navbar-brand" href="index.jsp" target="bottomIframe"><span>首页</span></a> -->
+			<a class="navbar-brand" href="resume.html?r=3" target="bottomIframe"><span>简历</span></a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+<!-- 				<li><a href="index/bootstrap.html" target="bottomIframe"><span>bootstrap</span></a></li> -->
+<!-- 				<li><a href="index/react.html" target="bottomIframe"><span>react</span></a></li> -->
+<!-- 				<li><a href="index/easyUI.html" target="bottomIframe"><span>easyUI</span></a></li> -->
+				<li class="dropdown" id="jangle_menu_xtgl" style="display:none;">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						系统管理
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+<!-- 						<li><a href="index/demo/user.html" target="bottomIframe">用户管理</a></li> -->
+<!-- 						<li><a href="mgmt/bsUser/bsUserList.jsp" target="bottomIframe">用户管理</a></li> -->
+						<li><a href="mgmt/bsUser2/bsUser2List.jsp" target="bottomIframe">用户管理v2</a></li>
+						<li><a href="mgmt/zdUserApply/zdUserApplyList.jsp" target="bottomIframe">用户申请管理</a></li>
+						<li><a href="mgmt/bsRole/bsRoleList.jsp" target="bottomIframe">角色管理</a></li>
+						<li><a href="mgmt/bsMenu/bsMenuList.jsp" target="bottomIframe">菜单管理</a></li>
+						<li><a href="mgmt/bsTeam/bsTeamList.jsp" target="bottomIframe">队伍管理</a></li>
+						<li><a href="mgmt/bsDemo/bsDemoList.jsp" target="bottomIframe">DEMO管理</a></li>
+						<li><a href="mgmt/bsTest/bsTestList.jsp" target="bottomIframe">DEMO管理v2</a></li>
+						<li><a href="mgmt/bsMail/bsMailList.jsp" target="bottomIframe">邮件列表</a></li>
+						<li><a href="mgmt/bsVisit/bsVisitList.jsp" target="bottomIframe">h访客列表</a></li>
+						<li><a href="mgmt/resumeAccessRecord/resumeAccessRecordList.jsp" target="bottomIframe">h访问详情</a></li>
+						<li><a href="mgmt/bsMailConfig/bsMailConfigList.jsp" target="bottomIframe">邮件配置</a></li>
+						<li><a href="fileUpload/uploadfiles_batch_webapps.jsp" target="bottomIframe">应用部署</a></li>
+						<li><a href="free.jsp" target="bottomIframe">内存信息</a></li>
+<!-- 						<li class="divider"></li> -->
+<!-- 						<li><a href="test/selectAndInput.html" target="bottomIframe">可选可输下拉框</a></li> -->
+<!-- 						<li class="divider"></li> -->
+<!-- 						<li><a href="test/inputList.html" target="bottomIframe">可选可输input</a></li> -->
+					</ul>
+				</li>
+				<li class="dropdown" id="other_menu_yygl" style="display:none;">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						应用管理
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="mgmt/bsTest/bsTestList.jsp" target="bottomIframe">DEMO管理v2</a></li>
+						<li><a href="mgmt/jgAssets/jgAssetsList.jsp" target="bottomIframe">资产管理</a></li>
+						<li><a href="mgmt/jgAssets/jgAssetsListForBook.jsp" target="bottomIframe">资产检索</a></li>
+						<li><a href="mgmt/bsVisit/bsVisitListAll.jsp" target="bottomIframe">访客列表</a></li>
+						<li><a href="mgmt/bsVisitCount/bsVisitCountList.jsp" target="bottomIframe">访客统计</a></li>
+						<li><a href="mgmt/bsExcuteHistory/bsExcuteHistoryList.jsp" target="bottomIframe">执行记录</a></li>
+					</ul>
+				</li>
+				<li class="dropdown" id="other_menu_yk" style="display:none;">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						应用管理
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="mgmt/bsTest/bsTestList.jsp" target="bottomIframe">DEMO管理v2</a></li>
+						<li><a href="mgmt/jgAssets/jgAssetsList.jsp" target="bottomIframe">资产管理</a></li>
+						<li><a href="mgmt/jgAssets/jgAssetsListForBook.jsp" target="bottomIframe">资产检索</a></li>
+						<li><a href="mgmt/bsVisit/bsVisitListAll.jsp" target="bottomIframe">访客列表</a></li>
+						<li><a href="mgmt/bsVisitCount/bsVisitCountList.jsp" target="bottomIframe">访客统计</a></li>
+						<li><a href="mgmt/bsExcuteHistory/bsExcuteHistoryList.jsp" target="bottomIframe">执行记录</a></li>
+						<li><a href="free.jsp" target="bottomIframe">内存信息</a></li>
+					</ul>
+				</li>
+				<li><a href="mgmt/zdLyb/zdLybList.jsp" target="bottomIframe"><span>战队留言板</span></a></li>
+<!-- 				<li class="youke-power" ><a href="mgmt/bsUser2/bsUserApplyInfo.jsp" target="bottomIframe"><span>用户申请V2</span></a></li> -->
+				<li class="youke-power" ><a href="mgmt/zdUserApply/bsUserApplyInfo.jsp" target="bottomIframe"><span>用户申请v3</span></a></li>
+				<li class="youke-power" ><a href="mgmt/zpYanImg/zpYanImgList.jsp" target="bottomIframe"><span>小朋友的作品</span></a></li>
+<!-- 				<li class="youke-power" ><a onclick="zjrkBack();" target="bottomIframe"><span>向上</span></a></li> -->
+<!-- 				<li class="youke-power" ><a id="zjrkURL" href="http://www.zjrjks.org/weChat.do?method=pInfo&uuid=1903" target="bottomIframe"><span>2019-10-21</span></a></li> -->
+<!-- 				<li class="youke-power" ><a onclick="zjrkNext();" target="bottomIframe"><span>向下</span></a></li> -->
+			</ul>
+		</div>
+		</div>
+	</nav>
+	<div class="content">
+<!-- 	index/welcome.html -->
+		<iframe id="bottomIframe" src="resume.html?r=3" name="bottomIframe"
+			width="100%" height="1500px;" style="border: 0px;"></iframe>
+	</div>
+	<div class="index-footer" >
+			Copyright © 2018-2019 ,<a href="http://www.jangle.xyz">jangle.xyz</a>. All rights reserved. |ICP证：<a href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备18046776号</a>
+	</div>
+<!-- 	<script src="js/jquery-3.3.1.min.js"></script> -->
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="/js/jangle.util.js"></script>
+	<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+	<script type="text/javascript">
+		var zjrkUuid = 1903;
+		var rkday = 21;
+		$.ajax({
+			url:"/user/loginStatus",
+			dataType:"json",
+			success:function(ret){
+				if(ret.code == "10001"){
+					if(ret.model.id == 2){
+						$("#login").text("您好："+returnCitySN["cname"]+"的"+ret.model.jgName);
+						$(".youke-power").show();
+						$("#other_menu_yk").show();
+					}else{
+						$("#login").text("您好："+ret.model.jgName);
+						if(ret.model.id == 1){
+							$("#jangle_menu_xtgl").show();
+							$("#other_menu_yygl").show();
+						}else{
+							$("#other_menu_yygl").show();
+						}
+					}
+					$("#login").append("<a href='javascript:logout();'><img alt='注销' src='images/userLogout.png' width='42' height='42'></a>");
+				}
+			},
+			error : function(request, textStatus, errorThrown) {
+				jangleShowAjaxError(request, textStatus, errorThrown);
+			}
+		});
+		$.ajax({
+			url:"/visitCtrl/insert",
+			type:"POST",
+			dataType:"json",
+			data:{"dmDesc":returnCitySN["cip"],"dmDesc2":returnCitySN["cname"]},
+			success:function(ret){
+				console.log(ret);
+				$("#visitCount").text("被访问"+ret.count+"次");
+			},error:function(){}
+		});
+		//注销
+		function logout(){
+			$.ajax({
+				url:"/user/logout",
+				dataType:"json",
+				success:function(ret){
+					if(ret.code =="10001"){
+						alert(ret.message);
+						location.href="index.html";
+					}
+				},
+				error : function(request, textStatus, errorThrown) {
+					jangleShowAjaxError(request, textStatus, errorThrown);
+				}
+			});
+		}
+		// 向上
+		function zjrkBack(){
+			zjrkUuid -= 5;
+			rkday--;
+			$("#zjrkURL").text("2019-10-"+rkday);
+			$("#zjrkURL").attr("href","http://www.zjrjks.org/weChat.do?method=pInfo&uuid="+zjrkUuid);
+		}
+		// 向下
+		function zjrkNext(){
+			zjrkUuid += 5;
+			rkday++;
+			$("#zjrkURL").text("2019-10-"+rkday);
+			$("#zjrkURL").attr("href","http://www.zjrjks.org/weChat.do?method=pInfo&uuid="+zjrkUuid);
+		}
+	</script>
+</body>
+</html>

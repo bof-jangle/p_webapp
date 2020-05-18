@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>找一个工作与生活融洽的团队2</title>
+<link rel="stylesheet" type="text/css" href="/css/backSystem.css" />
+<style type="text/css">
+.jangle-left-20{margin-left:20px;}
+#gzjl_table td a{text-decoration:none;color:#60f;}
+</style>
+</head>
+<body>
+
+<h3>我的简历值得您多做停留 | 联系方式(Email)：jangle@jangle.xyz</h3>
+
+<h4>个人简介</h4>
+<p class="jangle-left-20">从hello world!开始，10年编程经验。能独立做J2EE的<a href="http://jangle.xyz" target="_blank">业务系统</a>项目，有较多的业务设计经验。</p>
+<p class="jangle-left-20">
+从需求调研 -> 概要设计 ->   数据库设计 -> 
+<a href="https://blog.csdn.net/bof_jangle/article/category/7993515" target="_blank">后端</a>
+功能开发  -> 
+<a href="https://blog.csdn.net/bof_jangle/article/category/6284387" target="_blank">前端</a>
+页面设计  -> 功能确认、修改、交付
+</p>
+<p class="jangle-left-20">
+数据库环境（<a href="https://blog.csdn.net/bof_jangle/article/category/6165163" target="_blank">Oracle</a>、
+<a href="https://blog.csdn.net/bof_jangle/article/category/7906602" target="_blank">MySQL</a>）、
+应用环境搭建（<a href="https://blog.csdn.net/bof_jangle/article/category/9144147" target="_blank">Tomcat</a>、
+Jenkins
+<!-- <a href="http://jenkins.jangle.xyz:8080" target="_blank">Jenkins</a> -->
+）、
+开发环境搭建（<a href="https://blog.csdn.net/bof_jangle/article/category/7926610" target="_blank">Maven</a>、
+<a href="https://blog.csdn.net/bof_jangle/article/category/8064293" target="_blank">GIT</a>）
+</p>
+
+<h4>工作经历</h4>
+<table id="gzjl_table" style="width:90%;font-size:20px;">
+	<thead>
+		<tr>
+			<th width="30%" align="center">time</th>
+			<th width="60%">where is me</th>
+		</tr>
+	</thead>
+	<tbody align="center">
+		<tr>
+			<td >2009/09 - 2013/06</td>
+			<td><a href="resume/lsxy.html">丽水学院</a>(本科、学士)</td>
+		</tr>
+		<tr>
+			<td >2012/10 - 2013/05</td>
+			<td><a href="resume/lssx.html">丽水尚轩科技有限公司</a></td>
+		</tr>
+		<tr>
+			<td >2013/08 - 2014/04</td>
+			<td><a href="resume/abbx.html">安邦财产保险股份有限公司</a></td>
+		</tr>
+<!-- 		<tr> -->
+<!-- 			<td >2014/04 - 2014/08</td> -->
+<!-- 			<td><a href="resume/j2ee.html">自学《轻量级JavaEE企业应用实战》</a></td> -->
+<!-- 		</tr> -->
+		<tr>
+			<td >2014/08 - 2016/03</td>
+			<td><a href="resume/hzrc.html">杭州瑞成信息技术有限公司</a></td>
+		</tr>
+<!-- 		<tr> -->
+<!-- 			<td >2016/03 - 2016/05</td> -->
+<!-- 			<td><a href="resume/oracle.html">复习《Oracle 11g中文版数据库管理、应用与开发标准教程》</a></td> -->
+<!-- 		</tr> -->
+		<tr>
+			<td >2016/05 - 2016/09</td>
+			<td><a href="resume/whbjc.html">阿里淘票票</a></td>
+		</tr>
+		<tr>
+			<td >2018/06 - 2020/今</td>
+			<td><a href="resume/zjfxsl.html">浙江非线数联科技有限公司</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>
+喝口水，下载简历慢慢看
+</h4>
+<div><a href="/mgmt/bsTest/bsTestOpen.jsp?id=397" target="blank_">胡宏景4年Java18357881710</a> </div>
+<div style="margin-top:20px;">
+<a href="http://github.jangle.xyz" target="blank_">github</a>
+</div>
+<div style="margin-top:20px;">
+<a href="http://blog.jangle.xyz" target="blank_">blog</a>
+</div>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="/js/jquery-3.3.1.min.js" ></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+console.log("################################################");
+console.log("###可以给我介绍个小姐姐吗？我会全栈开发哦##########");
+console.log("################################################");
+console.log("我喜欢友善，乐观，开朗的同事");
+console.log("我希望同事可以像游戏队友，协同，互助，鼓励，相互学习。");
+console.log("我希望同事可以像游戏队友一样，乐于沟通，喜欢探讨，总结经验，提出解决方案，针对措施，改进措施。");
+console.log("我的同事可以自信，傲慢，不可一世，只要他真实得Carry全队，为团队撑起一片天，那他果真值得尊敬。");
+	var param = window.location.search;
+	if (param) {
+		param = param.substring(1);
+	}
+	var arr = param.split("&");
+	var ps = new Object();
+	for (var i = 0; i < arr.length; i++) {
+		var p = arr[i].split("=");
+		ps[p[0]] = p[1];
+	}
+	if (ps["id"]) {
+	} else {
+		$.ajax({
+			url : "/visitCtrl/insert",
+			type : "POST",
+			dataType : "json",
+			cache : false,
+			data : {
+				"dmDesc" : returnCitySN["cip"],
+				"dmDesc2" : returnCitySN["cname"],
+				"status" : "2"
+			},
+			success : function(ret) {
+			},
+			error : function() {
+			}
+		});
+	}
+</script>
+<script>
+	$(function(){
+		$("a").click(function(){
+			$.ajax({
+				url:"/resumeAccessRecordCtrl/add",
+				type:"POST",
+				async:false,
+				data:{
+					"dmDesc" : returnCitySN["cip"],
+					"dmDesc2" : returnCitySN["cname"],
+					"resumeUri" : $(this).attr('href')
+				},
+				success:function(){},
+				error:function(){}
+			});
+		})
+	})
+</script>
+</body>
+</html>
